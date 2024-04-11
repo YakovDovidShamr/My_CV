@@ -1,0 +1,274 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.nameContainer {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+}
+
+.icon_button {
+    width: 270px;
+    border: 0;
+    background-color: #FFFFFF00;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.icon_box {
+    width: 80px;
+}
+
+.icon {
+    height: 60px;
+    width: 55px;
+}
+
+.name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    margin: 5px 0px;
+}
+
+.icon_button:hover .name {
+    color: #3F6AC0;
+    transition: color 0.5s ease;
+}
+
+.profession {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    margin: 5px 0px;
+}
+
+.icon_button:hover .profession {
+    color: #3FC095;
+    transition: color 0.5s ease;
+}
+
+.menuContainer {
+    display: flex;
+    justify-items: end;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuContainer>div {
+    display: flex;
+}
+
+.menuContainer a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.menuContainer a:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+.menu {
+    height: 30px;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+    color: #3F6AC0;
+}
+
+.contant {
+    flex-grow: 2;
+    min-height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.my_picture {
+    height: 50vh;
+    width: 100%;
+    border-radius: 100%;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.my_picture:hover {
+    filter: none;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.info-container>* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.menu-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    border: 0;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    border: solid 1.25px;
+    background-color: rgb(236, 230, 230);
+}
+
+.resume-button {
+    background-color: #B847B2;
+}
+
+.projects-button {
+    background-color: #B88647;
+}
+
+.contact-button {
+    background-color: #47B84D;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px;
+}
+
+.footer-child {}
+
+.footer-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.phone-box {}
+
+.email-box {}
+
+.linkedIn-gitHub-box {}
+
+.linkedin-icon {
+    height: 48px;
+    width: 48px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    filter: none;
+}
+
+.address-box {}
+
+.address-title {
+    margin-bottom: 0;
+}
+
+.address {
+    margin: 0;
+}
+
+.gitHub-icon {
+    height: 48px;
+    width: 48px;
+    filter:opacity(60%);
+    transition: filter 0.3s ease;
+}
+
+.gitHub-icon:hover {
+    filter: none;
+}
+
+.location-image {
+    height: 30px;
+    width: 30px;
+    filter: grayscale(90%);
+    transition: filter 0.3s ease;
+}
+
+.location-image:hover {
+    filter: none;
+}
+
+hr {
+    width: 98vw;
+}
