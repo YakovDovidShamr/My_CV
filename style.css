@@ -1,3 +1,4 @@
+/* Styles for PC: */
 body {
     background-color: rgb(255, 255, 255);
     margin: 0;
@@ -227,8 +228,8 @@ p {
 .linkedIn-gitHub-box {}
 
 .linkedin-icon {
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    width: 40px;
     filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
@@ -248,9 +249,9 @@ p {
 }
 
 .gitHub-icon {
-    height: 48px;
-    width: 48px;
-    filter:opacity(60%);
+    height: 40px;
+    width: 40px;
+    filter: opacity(60%);
     transition: filter 0.3s ease;
 }
 
@@ -271,4 +272,240 @@ p {
 
 hr {
     width: 98vw;
+}
+
+/* Styles for mobile devices: */
+
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .header {
+        /* height: 100px; */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nameContainer {
+        display: grid;
+        justify-items: start;
+        align-items: center;
+    }
+
+    .icon_button {
+        width: 270px;
+        border: 0;
+        background-color: #FFFFFF00;
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+
+    .icon_box {
+        width: 80px;
+    }
+
+    .icon {
+        height: 60px;
+        width: 55px;
+    }
+
+    .name {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: x-large;
+        margin: 5px 0px;
+    }
+
+    .icon_button:hover .name {
+        color: #3F6AC0;
+        transition: color 0.5s ease;
+    }
+
+    .profession {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: medium;
+        margin: 5px 0px;
+    }
+
+    .icon_button:hover .profession {
+        color: #3FC095;
+        transition: color 0.5s ease;
+    }
+
+    .menuContainer {
+        display: flex;
+        justify-items: end;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menuContainer>div {
+        display: flex;
+    }
+
+    .menuContainer a {
+        text-decoration: none;
+        margin-left: 10px;
+        padding: 0 10px;
+        align-items: center;
+    }
+
+    .menuContainer a:not(:last-child) {
+        border-right: 2px solid black;
+    }
+
+    .menu {
+        height: 30px;
+        color: black;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: medium;
+        line-height: 30px;
+    }
+
+
+    /* Content: */
+    .contant {
+        flex-grow: 2;
+        min-height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .my_picture {
+        height: 25vh;
+        width: 100%;
+        border-radius: 100%;
+        justify-content: center;
+        filter: none;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .info-container>* {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0px 15px;
+    }
+
+
+    h1 {
+        font-family: "Roboto", sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .buttons-box {
+        display: flex;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .menu-button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        border: 0;
+    }
+
+    .resume-button {
+        background-color: #B847B2;
+    }
+
+    .projects-button {
+        background-color: #B88647;
+    }
+
+    .contact-button {
+        background-color: #47B84D;
+    }
+
+    /* Footer: */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+    .footer-title {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+    }
+
+    .footer-text {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+    }
+
+    .linkedin-icon {
+        height: 25px;
+        width: 25px;
+        filter: none;
+    }
+
+    .address-title {
+        margin-bottom: 0;
+    }
+
+    .address {
+        margin: 0;
+    }
+
+    .gitHub-icon {
+        height: 25px;
+        width: 25px;
+        filter: none;
+    }
+
+    .location-image {
+        height: 20px;
+        width: 20px;
+        filter: none;
+    }
+
+    hr {
+        width: 98vw;
+    }
 }
