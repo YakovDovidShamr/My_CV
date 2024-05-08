@@ -168,11 +168,11 @@ body {
 
 .contant {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding: 0 20px;
+    padding: 20px 0;
 }
 
 .image-container {
