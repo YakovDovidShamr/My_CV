@@ -1,0 +1,292 @@
+/* Styles for PC: */
+
+
+/* Header: */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 ;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+}
+
+.icon_button {
+    max-width: 270px;
+    border: 0;
+    background-color: #FFFFFF00;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.icon_box {
+    width: 80px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+}
+
+.name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: x-large;
+    margin: 5px 0px;
+}
+
+.icon_button:hover .name {
+    color: #3F6AC0;
+    transition: color 0.5s ease;
+}
+
+.profession {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    margin: 5px 0px;
+}
+
+.icon_button:hover .profession {
+    color: #3FC095;
+    transition: color 0.5s ease;
+}
+
+.menuContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuContainer > div {
+    display: flex;
+}
+
+.menuContainer a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.menuContainer a:not(:last-child) {
+    border-right: 2px solid black;
+}
+
+.menu {
+    height: 30px;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+    color: #3F6AC0;
+}
+
+.burger-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.burger-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: transform 0.3s ease;
+}
+
+.burger-icon::before {
+    top: -8px;
+}
+
+.burger-icon::after {
+    top: 8px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list a {
+    text-decoration: none;
+    padding: 0 10px;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: medium;
+    transition: color 0.3s ease;
+}
+
+/* Contant: */
+
+.contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Footer: */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.footer-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.linkedin-icon {
+    height: 40px;
+    width: 40px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.linkedin-icon:hover {
+    filter: none;
+}
+
+.address-title {
+    margin-bottom: 0;
+}
+
+.address {
+    margin: 0;
+}
+
+.gitHub-icon {
+    height: 40px;
+    width: 40px;
+    filter: opacity(60%);
+    transition: filter 0.3s ease;
+}
+
+.gitHub-icon:hover {
+    filter: none;
+}
+
+.location-image {
+    height: 30px;
+    width: 30px;
+    filter: grayscale(90%);
+    transition: filter 0.3s ease;
+}
+
+.location-image:hover {
+    filter: none;
+}
+
+hr {
+    width: 98vw;
+}
+
+/* Styles for the tablets: */
+
+
+
+
+/* Styles for the mobile devices: */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuContainer {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menuContainer .menu {
+        display: none;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .contant {
+        flex-direction: column;
+    }
+
+    .image-container,
+    .info-container {
+        max-width: 100%;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .menu-list.show {
+        display: block;
+      }
+      
+      .burger-icon.open::before {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .burger-icon.open::after {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      
+      .burger-icon.open {
+        background-color: transparent;
+      }
+}
+
