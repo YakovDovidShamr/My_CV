@@ -4,19 +4,8 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
     position: relative;
     overflow: auto;
-}
-
-/* Add 'position: relative;' to maintain layout */
-.header,
-.contant,
-.footer-container {
-    width: 100%;
-    max-width: 100%;
-    position: relative;
 }
 
 .header {
@@ -367,4 +356,20 @@ hr {
         flex-direction: column;
         align-items: start;
     }
+
+    .menu-list.show {
+        display: block;
+      }
+      
+      .burger-icon.open::before {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+      
+      .burger-icon.open::after {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+      
+      .burger-icon.open {
+        background-color: transparent;
+      }
 }
