@@ -49,7 +49,7 @@ body {
 }
 
 .icon_button * {
-    color: #0077B5;
+    color: #015d8f;
     filter: grayscale(100%);
     transition: transform 0.5s ease;
 }
@@ -205,29 +205,41 @@ body {
 
 .contant-text * {
     padding-left: 10px;
-    transition: transform 0.5s ease;
-}
-
-.contant-text:hover * {
-    transform: scale(1.1);
 }
 
 h1 {
+    width: 60px;
     font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+h1:hover {
+    transform: scale(1.2);
 }
 
 h2 {
+    width: 180px;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+h2:hover {
+    transform: scale(1.2);
 }
 
 p {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
+    transition: transform 0.5s ease;
+}
+
+p:hover {
+    transform: scale(1.1);
 }
 
 .buttons-box {
@@ -292,10 +304,12 @@ p {
 }
 
 .linkedin-icon {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     filter: grayscale(100%);
     transition: filter 0.5s ease;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .linkedin-icon:hover {
@@ -313,10 +327,12 @@ p {
 }
 
 .gitHub-icon {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     filter: opacity(60%);
     transition: filter 0.5s ease;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
 .gitHub-icon:hover {
