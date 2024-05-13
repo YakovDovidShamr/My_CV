@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>Contact</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yakov D. Shamrayevsky CV</title>
+    <link rel="stylesheet" href="./contact.css" />
+    <link rel="icon" href="../assets/icons8-resume-80.png" name="favicon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Kanit&family=Playfair+Display:wght@500&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="firstContainer">
+      <div class="nameContainer">
+        <button
+          onclick="window.location.href='../index.html'"
+          class="icon_button"
+        >
+          <div class="icon_box">
+            <img
+              src="../assets/icons8-resume-80.png"
+              alt="cv icon"
+              class="icon"
+            />
+          </div>
+          <div class="text_name_prof">
+            <p class="name">Yakov D. Shamrayevsky</p>
+            <p class="profession">Frontend Developer</p>
+          </div>
+        </button>
+      </div>
+      <div class="menuContainer">
+        <button class="burger-btn">
+          <span class="burger-icon"></span>
+        </button>
+        <div class="menu-list">
+          <a href="../resume/resume.html" class="resume menu">Resume</a>
+          <a href="../projects/projects.html" class="projects menu">Projects</a>
+          <a href="./contact.html" class="contact menu">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <hr />
+
+    <div class="contant" id="secondContainer">Contact</div>
+
+    <hr />
+
+    <footer class="footer-container" id="thirdContainer">
+      <div class="phone-box footer-child">
+        <p class="footer-title">Phone:</p>
+        <p class="footer-text">+972 050-7150702</p>
+      </div>
+      <div class="email-box footer-child">
+        <p class="footer-title">E-mail:</p>
+        <p class="footer-text">ydshamr@gmai.com</p>
+      </div>
+      <div class="linkedIn-gitHub-box footer-child">
+        <p class="footer-title">Folow Me:</p>
+        <a href="https://www.linkedin.com/in/yakov-d-shamrayevsky/"
+          ><img
+            src="../assets/icons-linkedin.png"
+            alt="linkedin icon"
+            class="linkedin-icon"
+        /></a>
+        <a href="https://github.com/YakovDovidShamr?tab=repositories"
+          ><img
+            src="../assets/github-logo.png"
+            alt="github icon"
+            class="gitHub-icon"
+        /></a>
+      </div>
+      <div class="address-box footer-child">
+        <p class="footer-title address-title">Address:</p>
+        <a
+          href="https://www.google.com/maps/place/Ha-Matmid+St+8,+Holon/@32.0025633,34.7584133,17z/data=!3m1!4b1!4m6!3m5!1s0x1502b370cb5c6f41:0x560184b4011582cd!8m2!3d32.0025588!4d34.7609882!16s%2Fg%2F11f6y9czfb?authuser=0&entry=ttu"
+          ><img
+            src="../assets/map_854878.png"
+            alt="location image"
+            class="location-icon"
+        /></a>
+        <p class="address footer-text">Ha-Matmid 8, Holon, Israel</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -11,10 +11,11 @@ body {
 }
 
 .header {
+    background-color: #B88647;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 ;
+    padding: 0;
 }
 
 .nameContainer {
@@ -49,9 +50,15 @@ body {
     margin: 5px 0px;
 }
 
-.icon_button:hover .name {
-    color: #3F6AC0;
-    transition: color 0.5s ease;
+.icon_button * {
+    color: #0b608e;
+    filter: grayscale(100%);
+    transition: transform 0.5s ease;
+}
+
+.icon_button:hover * {
+    filter: none;
+    transform: scale(1.05);
 }
 
 .profession {
@@ -62,17 +69,13 @@ body {
     margin: 5px 0px;
 }
 
-.icon_button:hover .profession {
-    color: #3FC095;
-    transition: color 0.5s ease;
-}
-
 .menuContainer {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
-.menuContainer > div {
+.menuContainer>div {
     display: flex;
 }
 
@@ -83,23 +86,20 @@ body {
     align-items: center;
 }
 
-.menuContainer a:not(:last-child) {
-    border-right: 2px solid black;
-}
-
 .menu {
     height: 30px;
-    color: black;
     font-family: "Ubuntu", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: medium;
     line-height: 30px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.5s ease, color 0.5s ease; /* Added color transition */
 }
 
 .menu:hover {
-    color: #3F6AC0;
+    transform: scale(1.18);
+    color: #0b608e;
+    text-decoration: underline;
 }
 
 .burger-btn {
@@ -154,7 +154,6 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: medium;
-    transition: color 0.3s ease;
 }
 
 /* Contant: */
@@ -170,6 +169,7 @@ body {
 
 /* Footer: */
 .footer-container {
+    background-color: #B88647;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -185,17 +185,26 @@ body {
 .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
+    transition: transform 0.6s ease;
+}
+
+.footer-text:hover {
+    transform: scale(1.16);
 }
 
 .linkedin-icon {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    transition: filter 0.5s ease;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease;
 }
 
 .linkedin-icon:hover {
     filter: none;
+    transform: scale(1.25);
 }
 
 .address-title {
@@ -207,31 +216,35 @@ body {
 }
 
 .gitHub-icon {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     filter: opacity(60%);
-    transition: filter 0.3s ease;
+    transition: filter 0.5s ease;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    transition: transform 0.5s ease;
 }
 
 .gitHub-icon:hover {
     filter: none;
+    transform: scale(1.25);
 }
 
-.location-image {
+.location-icon {
     height: 30px;
     width: 30px;
     filter: grayscale(90%);
-    transition: filter 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
-.location-image:hover {
+.location-icon:hover {
     filter: none;
+    transform: scale(1.3);
 }
 
 hr {
     width: 98vw;
 }
-
 /* Styles for the tablets: */
 
 
