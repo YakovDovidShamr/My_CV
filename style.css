@@ -49,7 +49,7 @@ body {
 }
 
 .icon_button * {
-    color: #015d8f;
+    color: #0b608e;
     filter: grayscale(100%);
     transition: transform 0.5s ease;
 }
@@ -70,6 +70,7 @@ body {
 .menuContainer {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .menuContainer>div {
@@ -83,10 +84,6 @@ body {
     align-items: center;
 }
 
-.menuContainer a:not(:last-child) {
-    border-right: 2px solid black;
-}
-
 .menu {
     height: 30px;
     font-family: "Ubuntu", sans-serif;
@@ -94,12 +91,13 @@ body {
     font-style: normal;
     font-size: medium;
     line-height: 30px;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, color 0.5s ease; /* Added color transition */
 }
 
-.manu:hover {
-    transform: scale(1.1);
-    color: #3d6580;
+.menu:hover {
+    transform: scale(1.18);
+    color: #0b608e;
+    text-decoration: underline;
 }
 
 .burger-btn {
@@ -154,7 +152,6 @@ body {
     font-weight: 500;
     font-style: normal;
     font-size: medium;
-    transition: color 0.3s ease;
 }
 
 .contant {
@@ -229,14 +226,14 @@ h2:hover {
     transform: scale(1.2);
 }
 
-p {
+.contant-text>p {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
     transition: transform 0.5s ease;
 }
 
-p:hover {
+.contant-text>p:hover {
     transform: scale(1.1);
 }
 
