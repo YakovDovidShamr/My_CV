@@ -93,13 +93,21 @@ body {
     font-style: normal;
     font-size: medium;
     line-height: 30px;
-    transition: transform 0.5s ease, color 0.5s ease; /* Added color transition */
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
 .menu:hover {
     transform: scale(1.18);
     color: #0b608e;
-    text-decoration: underline;
+}
+
+.projects.menu {
+    transform: scale(1.18);
+    color: #b3c3cb; 
+}
+
+.projects.menu:hover {
+   text-decoration: none; 
 }
 
 .burger-btn {
@@ -245,6 +253,7 @@ body {
 hr {
     width: 98vw;
 }
+
 /* Styles for the tablets: */
 
 
@@ -288,18 +297,17 @@ hr {
 
     .menu-list.show {
         display: block;
-      }
-      
-      .burger-icon.open::before {
-        transform: rotate(45deg) translate(5px, 5px);
-      }
-      
-      .burger-icon.open::after {
-        transform: rotate(-45deg) translate(5px, -5px);
-      }
-      
-      .burger-icon.open {
-        background-color: transparent;
-      }
-}
+    }
 
+    .burger-icon.open::before {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .burger-icon.open::after {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .burger-icon.open {
+        background-color: transparent;
+    }
+}

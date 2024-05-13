@@ -99,7 +99,15 @@ body {
 .menu:hover {
     transform: scale(1.18);
     color: #0b608e;
-    text-decoration: underline;
+}
+
+.contact.menu {
+    transform: scale(1.18);
+    color: #b3c3cb; 
+}
+
+.contact.menu:hover {
+    text-decoration: none;
 }
 
 .burger-btn {

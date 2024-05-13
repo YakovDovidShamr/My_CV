@@ -99,7 +99,15 @@ body {
 .menu:hover {
     transform: scale(1.18);
     color: #0b608e;
-    text-decoration: underline;
+}
+
+.resume.menu {
+    transform: scale(1.18);
+    color: #b3c3cb; 
+}
+
+.resume.menu:hover {
+   text-decoration: none; 
 }
 
 .burger-btn {
