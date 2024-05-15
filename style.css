@@ -60,7 +60,7 @@ body {
 }
 
 .profession {
-    font-family: "Ubuntu", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: medium;
@@ -86,7 +86,7 @@ body {
 
 .menu {
     height: 30px;
-    font-family: "Ubuntu", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: medium;
@@ -96,8 +96,6 @@ body {
 
 .menu:hover {
     transform: scale(1.18);
-    color: #0b608e;
-    text-decoration: underline;
 }
 
 .burger-btn {
@@ -196,7 +194,8 @@ body {
 }
 
 .info-container>* {
-    font-family: "Roboto", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
     margin: 0;
 }
 
@@ -206,7 +205,6 @@ body {
 
 h1 {
     width: 60px;
-    font-family: "Roboto", sans-serif;
     font-size: 40px;
     font-weight: bold;
     transition: transform 0.5s ease;
@@ -214,6 +212,7 @@ h1 {
 
 h1:hover {
     transform: scale(1.2);
+    color: #0b608e;
 }
 
 h2 {
@@ -226,6 +225,7 @@ h2 {
 
 h2:hover {
     transform: scale(1.2);
+    color: #0b608e;
 }
 
 .contant-text>p {
@@ -237,6 +237,7 @@ h2:hover {
 
 .contant-text>p:hover {
     transform: scale(1.1);
+    color: #0b608e;
 }
 
 .buttons-box {
@@ -251,7 +252,7 @@ h2:hover {
     height: 120px;
     border-radius: 50%;
     cursor: pointer;
-    font-family: "Roboto", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-size: 24px;
     border: 0;

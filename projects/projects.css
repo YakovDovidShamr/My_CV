@@ -3,6 +3,7 @@
 
 /* Header: */
 body {
+    background-color: #eeeeee;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -11,7 +12,6 @@ body {
 }
 
 .header {
-    background-color: #B88647;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +43,7 @@ body {
 }
 
 .name {
-    font-family: "Ubuntu", sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: x-large;
@@ -51,18 +51,16 @@ body {
 }
 
 .icon_button * {
-    color: #0b608e;
-    filter: grayscale(100%);
+    color: #333333;
     transition: transform 0.5s ease;
 }
 
 .icon_button:hover * {
-    filter: none;
     transform: scale(1.05);
 }
 
 .profession {
-    font-family: "Ubuntu", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: medium;
@@ -103,7 +101,7 @@ body {
 
 .projects.menu {
     transform: scale(1.18);
-    color: #b3c3cb;
+    color: #0b608e;
 }
 
 .projects.menu:hover {
@@ -167,6 +165,9 @@ body {
 /* Contant: */
 
 .content_name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size:xx-large;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -178,14 +179,19 @@ body {
 .container {
     display: grid;
     grid-template-columns: 40% 40%;
-    grid-template-rows: 100px 300px 100px 300px 100px 300px;
+    grid-template-rows: 100px 300px 2px 100px 300px 2px 100px 300px;
     justify-content: center;
     gap: 20px;
 }
 
-.container > * {
+.container>* {
     background-color: #8998a077;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .name_1 {
@@ -200,28 +206,36 @@ body {
     grid-area: 2/1/3/2;
 }
 
+.separating_line_1 {
+    grid-area: 3/1/4/3;
+}
+
 .name_2 {
-    grid-area: 3/1/4/2;
-}
-
-.picture_2 {
-    grid-area: 3/2/5/3;
-}
-
-.description_2 {
     grid-area: 4/1/5/2;
 }
 
-.name_3 {
+.picture_2 {
+    grid-area: 4/2/6/3;
+}
+
+.description_2 {
     grid-area: 5/1/6/2;
 }
 
+.separating_line_2 {
+    grid-area: 6/1/7/3;
+}
+
+.name_3 {
+    grid-area: 7/1/8/2;
+}
+
 .picture_3 {
-    grid-area: 5/2/7/3;
+    grid-area: 7/2/9/3;
 }
 
 .description_3 {
-    grid-area: 6/1/7/2;
+    grid-area: 8/1/9/2;
 }
 
 /* Footer: */
