@@ -1,6 +1,7 @@
 /* Styles for PC: */
 
 body {
+    background-color: #eeeeee;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@ body {
 }
 
 .header {
-    background-color: #B88647;
+    /* background-color: #B88647; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,12 +51,11 @@ body {
 
 .icon_button * {
     color: #0b608e;
-    filter: grayscale(100%);
     transition: transform 0.5s ease;
 }
 
 .icon_button:hover * {
-    filter: none;
+    /* filter: grayscale(100%); */
     transform: scale(1.05);
 }
 
@@ -157,7 +157,7 @@ body {
 /* Content: */
 
 .contant {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -279,7 +279,7 @@ h2:hover {
 /* Footer: */
 
 .footer-container {
-    background-color: #B88647;
+    /* background-color: #B88647; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
