@@ -96,17 +96,15 @@ body {
 
 .menu:hover {
     transform: scale(1.18);
-    color: #0b608e;
+    color:#0b608e;
 }
 
 .projects.menu {
     transform: scale(1.18);
     color: #0b608e;
+    font-weight: 600;
 }
 
-.projects.menu:hover {
-    text-decoration: none;
-}
 
 .burger-btn {
     display: none;
