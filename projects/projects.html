@@ -43,11 +43,11 @@
 
     <hr />
 
-    <div class="content_name" id="secondContainer">Projects</div>
+    <div class="content_name" id="secondContainer">Projects:</div>
     <div class="container">
-      <div class="name_1">name_1</div>
-      <div class="picture_1">picture_1</div>
-      <div class="description_1">description_1</div>
+      <div class="name_1">1. Frontend-BB</div>
+      <div class="picture_1"><video class="video" id="myVideo" muted><source src="../assets/MarketingBB.mp4" type="video/mp4"></source></video></div>
+      <div class="description_1"><div class="description-title">project management system</div>description_1</div>
       <div class="separating_line_1"></div>
       <div class="name_2">name_2</div>
       <div class="picture_2">picture_2</div>
@@ -96,5 +96,33 @@
         <p class="address footer-text">Ha-Matmid 8, Holon, Israel</p>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  const video = document.getElementById('myVideo');
+
+  video.playbackRate = 2;
+
+  let isMousOver = false;
+
+  video.addEventListener('mouseenter', function() {
+    isMousOver = true;
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', function() {
+    isMousOver = false;
+    video.pause();
+  });
+
+  video.addEventListener('ended', function() {
+    if (isMousOver) {
+      video.currentTime = 0;
+      video.play();
+    }
+  });
+});
+
+    </script>
   </body>
 </html>

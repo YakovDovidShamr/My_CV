@@ -3,7 +3,7 @@
 
 /* Header: */
 body {
-    background-color: #eeeeee;
+    /* background-color: #eeeeee; */
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
 }
 
 .name {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: x-large;
@@ -96,13 +96,18 @@ body {
 
 .menu:hover {
     transform: scale(1.18);
-    color:#0b608e;
+    color: #0b608e;
 }
 
 .projects.menu {
     transform: scale(1.18);
     color: #0b608e;
     font-weight: 600;
+}
+
+.projects.menu:hover {
+    filter: opacity(70%);
+    transition: transform 0.5s ease, color 0.5s ease;
 }
 
 
@@ -165,13 +170,14 @@ body {
 .content_name {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
-    font-size:xx-large;
+    font-size: xx-large;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
     padding: 20px 0;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -183,13 +189,36 @@ body {
 }
 
 .container>* {
-    background-color: #8998a077;
-    border-radius: 20px;
+    background-color: #2f2f2f;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333333;
+    color: #FFD700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name_1,
+.name_2,
+.name_3 {
+    font-size: x-large;
+    font-weight: 600;
+    color: #00FFFF;
+}
+
+.video {
+    width: 380px;
+    height: 340px;
+    background-color: #0f0f0f;
+    border: #fbbf24 solid 2px;
+    border-radius: 8px;
+    filter: opacity(50%);
+    transition: transform 0.7s ease, color 0.7s ease;
+}
+
+.video:hover {
+    filter: none;
+    transform: scale(1.32);
 }
 
 .name_1 {
@@ -202,10 +231,21 @@ body {
 
 .description_1 {
     grid-area: 2/1/3/2;
+    position: relative;
+    padding-top: 20px;
+}
+
+.description-title {
+    position: absolute;
+    top: 0;
+    padding: 10px 0;
+    font-size: x-large;
+    text-transform: capitalize;
 }
 
 .separating_line_1 {
     grid-area: 3/1/4/3;
+    border: solid 5px #2f2f2f;
 }
 
 .name_2 {
@@ -222,6 +262,7 @@ body {
 
 .separating_line_2 {
     grid-area: 6/1/7/3;
+    border: solid 5px #2f2f2f;
 }
 
 .name_3 {
@@ -238,7 +279,6 @@ body {
 
 /* Footer: */
 .footer-container {
-    background-color: #B88647;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
