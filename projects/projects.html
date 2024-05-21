@@ -43,16 +43,30 @@
     <div class="content_name" id="secondContainer">Projects:</div>
     <div class="container">
       <div class="name_1">1. Frontend-BB</div>
-      <div class="picture_1"><video class="video" id="myVideo" muted><source src="" type="video/mp4"></source></video></div>
-      <div class="description_1"><div class="description-title">project management system</div>description_1</div>
+      <div class="picture_1">
+        <iframe
+          class="video"
+          id="myVideo"
+          src="https://www.youtube.com/embed/rEjKE6v0grE?si=7Iszrx4NtlH6_6AN&amp;controls=0&autoplay=1&mute=1&enablejsapi=1"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+      <div class="description_1">
+        <div class="description-title">project management system</div>
+        description_1
+      </div>
       <div class="separating_line_1"></div>
       <div class="name_2">name_2</div>
       <div class="picture_2">picture_2</div>
-      <div class="description_2"><div class="description-title">project management system</div></div>
+      <div class="description_2">
+        <div class="description-title">project management system</div>
+      </div>
       <div class="separating_line_2"></div>
       <div class="name_3">name_3</div>
       <div class="picture_3">picture_3</div>
-      <div class="description_3"><div class="description-title">project management system</div></div>
+      <div class="description_3">
+        <div class="description-title">project management system</div>
+      </div>
     </div>
 
     <hr />
@@ -95,31 +109,30 @@
     </footer>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-  const video = document.getElementById('myVideo');
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const video = document.getElementById("myVideo");
 
-  video.playbackRate = 2;
+      //   video.playbackRate = 2;
 
-  let isMousOver = false;
+      //   let isMousOver = false;
 
-  video.addEventListener('mouseenter', function() {
-    isMousOver = true;
-    video.play();
-  });
+      //   video.addEventListener("mouseenter", function () {
+      //     isMousOver = true;
+      //     video.play();
+      //   });
 
-  video.addEventListener('mouseleave', function() {
-    isMousOver = false;
-    video.pause();
-  });
+      //   video.addEventListener("mouseleave", function () {
+      //     isMousOver = false;
+      //     video.pause();
+      //   });
 
-  video.addEventListener('ended', function() {
-    if (isMousOver) {
-      video.currentTime = 0;
-      video.play();
-    }
-  });
-});
-
+      //   video.addEventListener("ended", function () {
+      //     if (isMousOver) {
+      //       video.currentTime = 0;
+      //       video.play();
+      //     }
+      //   });
+      // });
     </script>
   </body>
 </html>
