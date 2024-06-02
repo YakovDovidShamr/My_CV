@@ -43,12 +43,15 @@
     <div class="content_name" id="secondContainer">Projects:</div>
     <div class="container">
       <div class="name_1">1. Frontend-BB</div>
-      <div class="picture_1">
+      <div class="picture_1" >
         <iframe
           class="video"
           id="myVideo"
-          src="https://www.youtube.com/embed/rEjKE6v0grE?si=7Iszrx4NtlH6_6AN&amp;controls=0&autoplay=1&mute=1&enablejsapi=1"
+          src="https://www.youtube.com/embed/rEjKE6v0grE?si=7Iszrx4NtlH6_6AN&amp;controls=0&autoplay=1&loop=1&playlist=rEjKE6v0grE&mute=1&enablejsapi=1"
           referrerpolicy="strict-origin-when-cross-origin"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
         ></iframe>
       </div>
       <div class="description_1">
@@ -109,30 +112,24 @@
     </footer>
 
     <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   const video = document.getElementById("myVideo");
+      var tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName("script")[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      //   video.playbackRate = 2;
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player("myVideo", {
+          events: {
+            onReady: onPlayerReady,
+          },
+        });
+      }
 
-      //   let isMousOver = false;
-
-      //   video.addEventListener("mouseenter", function () {
-      //     isMousOver = true;
-      //     video.play();
-      //   });
-
-      //   video.addEventListener("mouseleave", function () {
-      //     isMousOver = false;
-      //     video.pause();
-      //   });
-
-      //   video.addEventListener("ended", function () {
-      //     if (isMousOver) {
-      //       video.currentTime = 0;
-      //       video.play();
-      //     }
-      //   });
-      // });
+      function onPlayerReady(event) {
+        event.target.setPlaybackRate(2); // Set the playback speed (1 is normal speed, 1.5 is 1.5x speed, etc.)
+        event.target.playVideo(); // Start playing the video
+      }
     </script>
   </body>
 </html>
