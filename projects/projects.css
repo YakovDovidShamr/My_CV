@@ -173,16 +173,8 @@ body {
     width: 410px;
     height: 340px;
     background-color: #0f0f0f;
-    border: #fbbf24 solid 2px;
     border-radius: 8px;
-    /* filter: opacity(50%); */
-    /* transition: transform 0.7s ease, color 0.7s ease; */
 }
-
-/* .video:hover {
-    filter: none;
-    transform: scale(1.2);
-} */
 
 .name_1 {
     grid-area: 1/1/2/2;
@@ -218,6 +210,9 @@ body {
 
 .picture_2 {
     grid-area: 4/2/6/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description_2 {
